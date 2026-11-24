@@ -98,41 +98,6 @@ Keep your personal and academic information organized and updated.
 
 ---
 
-## 🚀 Get Started
-
-Want to explore InternTrack on your local machine?
-
-**Step 1 — Clone the repository**
-
-```bash
-git clone YOUR_REPOSITORY_URL
-```
-
-**Step 2 — Enter the project folder**
-
-```bash
-cd internship-tracker
-```
-
-**Step 3 — Install dependencies**
-
-```bash
-npm install
-```
-
-**Step 4 — Launch the application**
-
-```bash
-npm run dev
-```
-
-**Step 5 — Explore InternTrack**
-
-Open the local URL shown in your terminal, usually:
-
-`http://localhost:5173/`
-
----
 
 ## 🖥️ Sneak Peek Into InternTrack
 
