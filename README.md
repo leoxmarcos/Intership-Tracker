@@ -1,16 +1,40 @@
-# React + Vite
+# 🚀 InternTrack — Student Internship Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
 
-Currently, two official plugins are available:
+  <img src="https://img.shields.io/badge/InternTrack-Internship%20Management-6366F1?style=for-the-badge&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/Build-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+</p>
 
-## React Compiler
+<p align="center">
+  <b>One Platform. Every Opportunity. Your Career, Organized.</b>
+</p>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<p align="center">
+  A smart and user-friendly platform designed to help students organize, manage, and track their internship journey — all in one place.
+</p>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🌟 About the Project
+
+Finding and managing internships can become challenging when applications, deadlines, interviews, and company details are scattered across different platforms.
+
+**InternTrack** is designed to simplify this process.
+
+It provides students with a centralized dashboard where they can manage internship applications, monitor application progress, organize important dates, maintain their profiles, and analyze their application performance.
+
+Our goal is to make internship management more organized, efficient, and accessible.
+
+## ✨ Key Features
+
+### 🔐 1. User Authentication
+- Student Registration and Login pages.
+- Password and form validation.
+- Easy navigation between authentication pages.
+
+### 📊 2. Interactive Dashboard
+- Overview of internship application activities.
+- Quick
