@@ -1,0 +1,262 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 20px;
+  background: linear-gradient(135deg, #789ce9, #a7c0f4);
+  font-family: Arial, sans-serif;
+}
+
+/* Main Card */
+
+.register-card {
+  width: 100%;
+  max-width: 1050px;
+  min-height: 620px;
+  display: flex;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 45px rgba(20, 48, 100, 0.15);
+}
+
+/* Left Section */
+
+.register-illustration {
+  width: 48%;
+  background: #eaf1ff;
+  padding: 35px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.register-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.register-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #204fba;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.register-brand h2 {
+  color: #193d85;
+  font-size: 23px;
+}
+
+.illustration-content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.illustration-content h1 {
+  color: #183b83;
+  font-size: 34px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.illustration-content p {
+  color: #61718b;
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 370px;
+  margin: auto;
+}
+
+.register-image {
+  width: 100%;
+  max-width: 360px;
+  height: 230px;
+  object-fit: contain;
+  margin-top: 20px;
+}
+
+.illustration-footer {
+  text-align: center;
+  color: #63799d;
+  font-size: 13px;
+}
+
+/* Right Section */
+
+.register-form-section {
+  width: 52%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 55px;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 390px;
+}
+
+.register-form h1 {
+  text-align: center;
+  color: #193d85;
+  font-size: 32px;
+  margin-bottom: 9px;
+}
+
+.register-description {
+  text-align: center;
+  color: #858585;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+/* Input Fields */
+
+.register-field {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #dce2ec;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 13px;
+  margin-bottom: 15px;
+  color: #7c899d;
+  transition: 0.3s;
+}
+
+.register-field:focus-within {
+  border-color: #2457bd;
+  box-shadow: 0 0 0 3px rgba(36, 87, 189, 0.08);
+}
+
+.field-icon {
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+.register-field input {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: #333;
+  background: transparent;
+}
+
+.register-field input::placeholder {
+  color: #9ba4b2;
+}
+
+.password-toggle {
+  border: none;
+  background: transparent;
+  color: #78869a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+
+/* Submit Button */
+
+.register-submit {
+  width: 100%;
+  height: 49px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 8px;
+  background: #204fba;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-submit:hover {
+  background: #153c91;
+  transform: translateY(-1px);
+}
+
+/* Bottom Login Link */
+
+.register-bottom {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.register-bottom p {
+  font-size: 13px;
+  color: #858585;
+}
+
+.register-bottom a {
+  color: #204fba;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+
+@media (max-width: 800px) {
+  .register-card {
+    max-width: 520px;
+    flex-direction: column;
+  }
+
+  .register-illustration,
+  .register-form-section {
+    width: 100%;
+  }
+
+  .register-illustration {
+    padding: 25px;
+  }
+
+  .illustration-content h1 {
+    font-size: 27px;
+  }
+
+  .register-image {
+    height: 150px;
+  }
+
+  .register-form-section {
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .register-page {
+    padding: 15px 10px;
+  }
+
+  .register-form h1 {
+    font-size: 27px;
+  }
+}

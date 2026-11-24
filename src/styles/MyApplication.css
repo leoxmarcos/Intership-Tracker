@@ -1,0 +1,265 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.applications-page {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f7fc;
+  font-family: Arial, sans-serif;
+}
+
+.applications-sidebar {
+  width: 240px;
+  background: #172554;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.applications-sidebar h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.applications-sidebar a {
+  text-decoration: none;
+  color: #dbeafe;
+  padding: 13px;
+  border-radius: 7px;
+}
+
+.applications-sidebar a:hover,
+.applications-sidebar a.active {
+  background: #3b82f6;
+  color: white;
+}
+
+.applications-sidebar .logout-link {
+  margin-top: auto;
+}
+
+.applications-main {
+  flex: 1;
+  padding: 35px;
+  min-width: 0;
+}
+
+.applications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.applications-header h1 {
+  color: #172554;
+  margin-bottom: 8px;
+}
+
+.applications-header p {
+  color: #64748b;
+}
+
+.total-count {
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.application-form-card,
+.applications-table-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.application-form-card h2,
+.applications-table-card h2 {
+  color: #172554;
+  margin-bottom: 20px;
+}
+
+.application-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.application-form input,
+.application-form select,
+.search-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dbe2ea;
+  border-radius: 7px;
+  outline: none;
+}
+
+.application-form input:focus,
+.application-form select:focus,
+.search-input:focus {
+  border-color: #3b82f6;
+}
+
+.save-btn,
+.cancel-btn {
+  border: none;
+  padding: 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.cancel-btn {
+  background: #64748b;
+  color: white;
+}
+
+.table-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  max-width: 280px;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.applications-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.applications-table th,
+.applications-table td {
+  padding: 16px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.applications-table th {
+  background: #f8fafc;
+  color: #475569;
+  font-size: 13px;
+}
+
+.applications-table td {
+  color: #334155;
+  font-size: 14px;
+}
+
+.status-badge {
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-badge.applied {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status-badge.shortlisted {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-badge.interview {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.status-badge.selected {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.status-badge.rejected {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 7px;
+  color: white;
+}
+
+.edit-btn {
+  background: #2563eb;
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+.no-data {
+  text-align: center !important;
+  padding: 30px !important;
+  color: #64748b !important;
+}
+
+@media (max-width: 768px) {
+  .applications-sidebar {
+    width: 170px;
+    padding: 20px 12px;
+  }
+
+  .applications-main {
+    padding: 20px 12px;
+  }
+
+  .application-form {
+    grid-template-columns: 1fr;
+  }
+
+  .applications-header,
+  .table-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .search-input {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .applications-page {
+    flex-direction: column;
+  }
+
+  .applications-sidebar {
+    width: 100%;
+  }
+
+  .applications-sidebar .logout-link {
+    margin-top: 0;
+  }
+}
